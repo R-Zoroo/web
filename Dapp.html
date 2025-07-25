@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PUC Application Form</title>
+</head>
+<body bgcolor="blanchedalmond" style="font-size:small;">
+  <center>
+  <h1>PUC Application Form</h1>
+
+  <form action="/submit-application" method="post">
+    <fieldset>
+      <legend>Personal Details</legend>
+
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="contact">Contact Number:</label>
+      <input type="tel" id="contact" name="contact"><br><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required><br><br>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="">--Select--</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Academic Information</legend>
+
+      <label for="highschool">High School Name:</label>
+      <input type="text" id="highschool" name="highschool" required><br><br>
+
+      <label for="board">Board of Examination:</label>
+      <input type="text" id="board" name="board"><br><br>
+
+      <label for="percentage">Percentage/Grade:</label>
+      <input type="text" id="percentage" name="percentage" required><br><br>
+
+      <label for="stream">Preferred Stream:</label>
+      <select id="stream" name="stream">
+        <option value="">--Select--</option>
+        <option value="science">Science</option>
+        <option value="commerce">Commerce</option>
+        <option value="arts">Arts</option>
+      </select><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional Information</legend>
+
+      <label for="documents">Upload Documents:</label>
+      <input type="file" id="documents" name="documents" multiple><br><br>
+
+      <label for="remarks">Any Additional Remarks:</label><br>
+      <textarea id="remarks" name="remarks" rows="4" cols="40"></textarea><br><br>
+
+      <label>
+        <input type="checkbox" name="agreement" required>
+        I declare that the above information is true and accurate.
+      </label><br><br>
+    </fieldset>
+
+    <button type="submit">Submit Form</button>
+    <button type="reset">Clear</button>
+  </form>
+  </center>
+</body>
+</html>
